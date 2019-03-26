@@ -262,6 +262,9 @@ footer div {
 }
 
 @media only screen and (max-width: 720px) {
+  h2 {
+    margin: 10px;
+  }
   html, body {
     overflow-y: visible;
   }
@@ -270,6 +273,9 @@ footer div {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #competences #contenant > div:nth-child(2) {
     margin-left: 0;
@@ -281,6 +287,34 @@ footer div {
   }
   #competences #contenant > div > div {
     margin-top: 15px;
+  }
+  #experience > div {
+    margin-top: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 30%;
+  }
+  #experience > div .exp {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+  }
+  #experience > div .exp:hover {
+    height: 120px;
+    width: 120px;
+  }
+  #projets > div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    height: 80%;
+  }
+  #projets > div div {
+    width: 250px;
+    height: 150px;
+    border: 4px solid white;
   }
 }
 
@@ -439,6 +473,9 @@ footer div {
   }
   #accueil div h3 {
     font-size: 5vw;
+  }
+  #competences div .comp {
+    font-size: 25px;
   }
 }
 
