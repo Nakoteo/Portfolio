@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+section {
+  width: 100vh;
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+section h2 {
+  margin: 30px;
+}
+
+#accueil div {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#competences #contenant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#competences #contenant > div:nth-child(2) {
+  margin-left: 2vw;
+}
+
+#competences #contenant div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 520px;
+}
+
+#competences #contenant div .comp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#competences #contenant div .comp div {
+  width: 300px;
+  height: 30px;
+}
+
+#experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#experience p {
+  margin-left: 14vw;
+  margin-right: 14vw;
+  margin-top: 100px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#experience > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  height: 40%;
+}
+
+#experience > div .exp {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 20px;
+}
+
+#experience > div .exp:hover {
+  height: 250px;
+  width: 250px;
+}
+
+#projets > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 80%;
+}
+
+#projets > div div {
+  width: 500px;
+  height: 300px;
+  background-color: #aaa;
+  border: 10px solid #fff;
+  margin: 10px;
+}
+
+#projets > div div a {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div {
+  margin: 40px;
+}
+
+@media only screen and (max-width: 1120px) {
+  #competences #contenant div {
+    width: auto;
+  }
+  #competences #contenant div .comp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #experience > div .exp {
+    height: 140px;
+    width: 140px;
+  }
+  #experience > div .exp:hover {
+    height: 190px;
+    width: 190px;
+  }
+  #projets > div div {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  html, body {
+    overflow-y: visible;
+  }
+  #competences #contenant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #competences #contenant > div:nth-child(2) {
+    margin-left: 0;
+  }
+  #competences #contenant > div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #competences #contenant > div > div {
+    margin-top: 15px;
+  }
+}
+
+html, body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222674), to(#531668));
+  background-image: linear-gradient(#222674, #531668);
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+#competences #contenant > div:nth-child(1) > div:nth-child(1) div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, #ff1cf4 180px, #ff1cf4 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, #ff1cf4 210px, #ff1cf4 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, #ff1cf4 240px, #ff1cf4 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#competences #contenant > div:nth-child(1) > div:nth-child(2) div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, #ff1cf4 180px, #ff1cf4 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, #ff1cf4 210px, #ff1cf4 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, rgba(170, 170, 170, 0.5) 240px, rgba(170, 170, 170, 0.5) 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#competences #contenant > div:nth-child(1) > div:nth-child(3) div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, #ff1cf4 180px, #ff1cf4 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, rgba(170, 170, 170, 0.5) 210px, rgba(170, 170, 170, 0.5) 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, rgba(170, 170, 170, 0.5) 240px, rgba(170, 170, 170, 0.5) 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#competences #contenant > div:nth-child(1) > div:nth-child(4) div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, #ff1cf4 180px, #ff1cf4 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, rgba(170, 170, 170, 0.5) 210px, rgba(170, 170, 170, 0.5) 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, rgba(170, 170, 170, 0.5) 240px, rgba(170, 170, 170, 0.5) 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#competences #contenant > div:nth-child(2) > div:nth-child(2) div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, #ff1cf4 180px, #ff1cf4 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, #ff1cf4 210px, #ff1cf4 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, rgba(170, 170, 170, 0.5) 240px, rgba(170, 170, 170, 0.5) 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#competences #contenant > div:nth-child(2) > div:nth-child(3) div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, #ff1cf4 180px, #ff1cf4 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, #ff1cf4 210px, #ff1cf4 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, rgba(170, 170, 170, 0.5) 240px, rgba(170, 170, 170, 0.5) 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#competences #contenant > div:nth-child(2) > div:nth-child(4) div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, #ff1cf4 180px, #ff1cf4 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, rgba(170, 170, 170, 0.5) 210px, rgba(170, 170, 170, 0.5) 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, rgba(170, 170, 170, 0.5) 240px, rgba(170, 170, 170, 0.5) 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#competences #contenant .comp div {
+  background-image: linear-gradient(to right, #ff1cf4 19px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 29px, #ff1cf4 30px, #ff1cf4 49px, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0) 59px, #ff1cf4 60px, #ff1cf4 79px, rgba(0, 0, 0, 0) 80px, rgba(0, 0, 0, 0) 89px, #ff1cf4 90px, #ff1cf4 109px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 119px, #ff1cf4 120px, #ff1cf4 139px, rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0) 149px, #ff1cf4 150px, #ff1cf4 169px, rgba(0, 0, 0, 0) 170px, rgba(0, 0, 0, 0) 179px, rgba(170, 170, 170, 0.5) 180px, rgba(170, 170, 170, 0.5) 199px, rgba(0, 0, 0, 0) 200px, rgba(0, 0, 0, 0) 209px, rgba(170, 170, 170, 0.5) 210px, rgba(170, 170, 170, 0.5) 229px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 239px, rgba(170, 170, 170, 0.5) 240px, rgba(170, 170, 170, 0.5) 259px, rgba(0, 0, 0, 0) 260px, rgba(0, 0, 0, 0) 269px, rgba(170, 170, 170, 0.5) 270px, rgba(170, 170, 170, 0.5) 289px, rgba(0, 0, 0, 0) 290px, rgba(0, 0, 0, 0) 300px);
+}
+
+#experience .exp {
+  background-size: contain;
+}
+
+#experience .exp:nth-child(1) {
+  background-image: url("../../img/logoMaisonneuve.png");
+}
+
+#experience .exp:nth-child(2) {
+  background-image: url("../../img/migs.jpg");
+}
+
+#experience .exp:nth-child(3) {
+  background-image: url("../../img/gamejam.jpg");
+}
+
+#experience .exp:nth-child(4) {
+  background-image: url("../../img/ludia.png");
+}
+
+#projets .pro {
+  background-size: cover;
+}
+
+#projets .pro:nth-child(1) {
+  background-image: url("../../img/manekineko.png");
+  background-position: center;
+}
+
+#projets .pro:nth-child(2) {
+  background-image: url("../../img/unitychan.png");
+}
+
+#projets .pro:nth-child(3) {
+  background-image: url("../../img/steamcore.png");
+}
+
+#projets .pro:nth-child(4) {
+  background-image: url("../../img/auberge.jpg");
+}
+
+footer div {
+  cursor: pointer;
+}
+
+html, body {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  color: white;
+}
+
+nav ul li {
+  font-weight: bold;
+}
+
+#accueil div h1 {
+  font-size: 5vw;
+  font-weight: bold;
+  text-shadow: 4px 0px 0px #4eeaff;
+}
+
+#accueil div h3 {
+  font-size: 2vw;
+  text-shadow: 2px 0px 0px #4eeaff;
+}
+
+#competences div .comp {
+  font-size: 30px;
+}
+
+#experience p {
+  font-size: 25px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section {
+  color: white;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 3px 0px 0px #4eeaff;
+}
+
+footer {
+  font-family: 'Major Mono Display', monospace;
+}
+
+footer div {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1120px) {
+  #experience p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #accueil div h1 {
+    font-size: 10vw;
+  }
+  #accueil div h3 {
+    font-size: 5vw;
+  }
+}
+
+main {
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+#experience > div .exp {
+  -webkit-transition: height 1s, width 1s;
+  transition: height 1s, width 1s;
+}
+/*# sourceMappingURL=style.css.map */

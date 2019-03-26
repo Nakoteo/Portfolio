@@ -1,0 +1,165 @@
+html, body{
+	overflow: hidden;
+}
+main{
+	display: flex;
+}
+nav{
+    ul{
+        display: flex;
+        li{
+            margin: 20px;
+        }
+    }
+}
+section{
+	width: 100vh;
+	height: 100vh;
+	flex: 1 0 100%;
+	h2{
+		margin: 30px;
+	}
+}
+#accueil{
+	div{
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+#competences{
+	#contenant{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		>div:nth-child(2){
+			margin-left: 2vw;
+		}
+		div{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			width: 520px;
+			.comp{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				div{
+					width: 300px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+#experience{
+	display: flex;
+	flex-direction: column;
+	p{
+		margin-left: 14vw;
+		margin-right: 14vw;
+		margin-top: 100px;
+		align-self: flex-end;
+	}
+}
+#experience>div{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 20px;
+	height: 40%;
+	.exp{
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		border: 5px solid white;
+		margin: 20px;
+	}
+	.exp:hover{
+		height: 250px;
+		width: 250px;
+	}
+}
+#projets>div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	height: 80%;
+	div{
+		width: 500px;
+		height: 300px;
+		background-color: #aaa;
+		border: 10px solid #fff;
+		margin: 10px;
+		a{
+			height: 100%;
+			width: 100%;
+			cursor: pointer;
+		}
+	}
+	
+}
+footer{
+	position:absolute;
+    width:100%;
+	bottom:0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	div{
+		margin: 40px;
+	}
+}
+
+@media only screen and (max-width: 1120px) {
+	#competences{
+		#contenant{
+			div{
+				width: auto;
+				.comp{
+					flex-direction: column;
+				}
+			}
+		}
+	}
+	#experience>div{
+		.exp{
+			height: 140px;
+			width: 140px;
+		}
+		.exp:hover{
+			height: 190px;
+			width: 190px;
+		}
+	}
+	#projets>div{
+		div{
+			width: 400px;
+			height: 250px;
+		}
+	}
+}
+@media only screen and (max-width: 720px) {
+	html, body{
+		overflow-y: visible;
+	}
+	#competences{
+		#contenant{
+			flex-direction: column;
+			>div:nth-child(2){
+				margin-left: 0;
+			}
+			>div{
+				align-items: center;
+				>div{
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
