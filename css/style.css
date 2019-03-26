@@ -184,6 +184,7 @@ section h2 {
   border-radius: 50%;
   border: 5px solid white;
   margin: 20px;
+  cursor: pointer;
 }
 
 #experience > div .exp:hover {
@@ -210,11 +211,6 @@ section h2 {
   background-color: #aaa;
   border: 10px solid #fff;
   margin: 10px;
-}
-
-#projets > div div a {
-  height: 100%;
-  width: 100%;
   cursor: pointer;
 }
 
@@ -261,11 +257,18 @@ footer div {
   }
 }
 
+@media only screen and (max-width: 896px) {
+  #projets > div {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   h2 {
     margin: 10px;
   }
-  html, body {
+  body {
     overflow-y: visible;
   }
   #competences #contenant {
@@ -287,6 +290,10 @@ footer div {
   }
   #competences #contenant > div > div {
     margin-top: 15px;
+  }
+  #experience p {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   #experience > div {
     margin-top: 10px;
@@ -393,7 +400,7 @@ nav ul li {
 }
 
 #projets .pro:nth-child(3) {
-  background-image: url("../../img/steamcore.png");
+  background-image: url("../../img/steamcore1.png");
 }
 
 #projets .pro:nth-child(4) {
@@ -476,6 +483,9 @@ footer div {
   }
   #competences div .comp {
     font-size: 25px;
+  }
+  #experience p {
+    font-size: 16px;
   }
 }
 

@@ -9,10 +9,11 @@
     var elemTexte = document.getElementById('texteExp');
     var i = 0;
     var expLength = exp.length;
-    console.log(expLength);
+    var estMobile =  'ontouchstart' in document.documentElement;
 
     for(i = 0; i < expLength; i++){
-        exp[i].addEventListener("mouseover", afficherTexte);
+        exp[i].addEventListener( (estMobile) ? "touchstart" : "mouseover" , afficherTexte);
+        //addEventListener("mouseover", afficherTexte);
     }
 
     function afficherTexte(e){

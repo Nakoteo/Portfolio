@@ -78,6 +78,7 @@ section{
 		border-radius: 50%;
 		border: 5px solid white;
 		margin: 20px;
+		cursor: pointer;
 	}
 	.exp:hover{
 		height: 250px;
@@ -96,11 +97,7 @@ section{
 		background-color: #aaa;
 		border: 10px solid #fff;
 		margin: 10px;
-		a{
-			height: 100%;
-			width: 100%;
-			cursor: pointer;
-		}
+		cursor: pointer;
 	}	
 }
 footer{
@@ -143,11 +140,16 @@ footer{
 		}
 	}
 }
+@media only screen and (max-width: 896px){
+	#projets>div{
+		align-content: flex-start;
+	}
+}
 @media only screen and (max-width: 720px) {
 	h2{
 		margin: 10px;
 	}
-	html, body{
+	body{
 		overflow-y: visible;
 	}
 	#competences{
@@ -163,6 +165,12 @@ footer{
 					margin-top: 15px;
 				}
 			}
+		}
+	}
+	#experience{
+		p{
+			margin-left: 20px;
+			margin-right: 20px;
 		}
 	}
 	#experience>div{

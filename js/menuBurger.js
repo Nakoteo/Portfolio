@@ -20,6 +20,14 @@
         }
         elmMain.style.transform = "translateX(-" + e.target.getAttribute("data-index") + "%)";
         e.target.style.textShadow = "1px 0px 0px rgb(255, 28, 244)";
+        if(e.target.getAttribute("data-index") == "0" || e.target.getAttribute("data-index") == "200"){
+            document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+        } else{
+            if(window.innerWidth < 720){
+                document.getElementsByTagName("body")[0].style.overflowY = "visible";
+            }
+            
+        }
     }
 
     function petitEcran(){
